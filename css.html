@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Directory
+Import external css
+Classes
+Positioning/ID
+Background/BG Image
+H1 = Color
+H2 = Padding/Borders
+H3 = Text Alignment
+H4 = Dimension Definition
+H5/H6 = Shared Properties
+P = Font/Indent/Margin
+Pseudoelement
+List Grouping
+Custom List Bulletpoints
+Stylized Links
+Parent Element
+Table Styling
+Span
+Divider
+Image Size Definition
+Form Input
+ -->
+<html>
+	<head>
+		<title>CSS</title>
+		<link rel="stylesheet" type="text/css" href="external.css"/>
+		<style type = "text/css">
+			.exampleclass {
+				color:red;
+			}
+			.secondclass {
+				color:green;
+				background-color:white;
+			}
+			#firstdiv {
+				border: 2px solid red;
+				position: absolute;
+				width: 150px;
+				height: 175px;
+				top: 15px;
+				left: 25px;
+			}
+			#seconddiv {
+				border: 2px solid green;
+				position: relative;
+				width:150px;
+				height:175px;
+				top: 65px;
+				left: 5px;
+			}
+			#thirddiv {
+				border: 2px solid yellow;
+				position: fixed;
+			}
+			body {
+				background-color:#67c5e0;
+				color:white;
+				background-image:url(pictureofme.jpg);
+				background-repeat:repeat-y;
+				background-position:50% 60px;
+			}
+			h1 {
+				color:#ad1d1d;
+			}
+			h2 {
+				background-color:yellow;
+				padding:10px;
+				padding-top:20px;
+				padding-bottom:30px;
+				padding-left:40px;
+				
+				border-color:red;
+				border-width:3px;
+				border-style:dashed;
+				
+				border-top-color:green;
+				border-top-style:dotted;
+				border-top-width:5px;
+			}
+			h3 {
+				text-align:center;
+			}
+			h4 {
+				background-color:red;
+				width:350px;
+				height:100px;
+				border: 3px solid black;
+			}
+			h5,h6 {
+				color:red;
+			}
+			p {
+				color:blue;
+				background-color:orange;
+				margin:50px;
+				font-family:arial;
+				line-height:150%;
+				text-indent:25px;
+			}
+			p:first-letter {
+				font-weight:bold;
+				font-size:30px;
+				color:green;
+			}
+			ul {
+				font-weight:bold;
+				list-style-type: none;
+				border: 1px solid red;
+				padding:0;
+			}
+			ol {
+				font-style:italic;
+				list-style-image:url(check.png);
+			}
+			a:link {
+				color:red;
+				text-decoration:none;
+			}
+			a:visited {
+				color:green;
+			}
+			a:hover {
+				background-color:blue;
+				color:white;
+				text-decoration:underline;
+				font-weight:bold;
+			}
+			a:active {
+				background-color: orange;
+			}
+			p > a:link {
+				color:red;
+				font-size:30px;
+			}
+			p > a:visited {
+				color:blue;
+				font-size:45px;
+			}
+			p > a:hover {
+				background-color:green;
+				color:white;
+				text-decoration:underline;
+				font-weight:italic;
+			}
+			p > a:active {
+				background-color: white;
+			}
+			table {
+				border: 3px solid blue;
+			}
+			tr {
+				background-color:yellow;
+			}
+			td {
+				border: 2px dashed red;
+			}
+			span {
+				font-weight:bold;
+				color:green;
+			}
+			div {
+				border:2px solid blue;
+				position:absolute;
+				width: 300px;
+				top:40px;
+				left:100px;
+			}
+			img {
+				max-height: 100px;
+				max-width: 100px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>css altered header text</h1>
+		<p>indented css altered paragraph text<br/>
+		css altered paragraph text.<span>span text example</span> in the same paragraph<br/>
+		css altered paragraph text
+		</p>
+		<p>another paragraph to show margins</p>
+		<p class = "exampleclass">an example paragraph to showcase classes</p>
+		<p class = "secondclass">another example paragraph to showcase classes</p>
+		<ul>
+			<li>css bold text</li>
+			<li>2nd item</li>
+			<li>3rd item</li>
+		</ul>
+		
+		<ol>
+			<li>css italic text</li>
+			<li>2nd item</li>
+			<li>3rd item</li>
+		</ol>
+		
+		<h3>center justified</h3>
+		<h2>text padding with padding and borders</h2>
+		<h4>dimension defined element</h4>
+		<h5>Style duplication across multiple elements</h5>
+		<h6>Style duplication across multiple elements</h6>
+		<a href = "index.html">stylized link</a>
+		<p><a href = "index.html">child link of paragraph</a></p>
+				
+		<table>
+			<tr>
+				<td>Row1 Column1</td>
+				<td>Row1 Column2</td>
+				<td>Row1 Column3</td>
+			</tr>
+			<tr>
+				<td>Row2 Column1</td>
+				<td>Row2 Column2</td>
+				<td>Row2 Column3</td>
+			</tr>
+		</table>
+		<br/>
+		<div id = "firstdiv">This is a div example with absolute positioning</div>
+		<div id = "seconddiv">This is a div example with relative positioning</div>
+		<div id = "thirddiv">This is a div example with fixed positioning</div>
+		<div>Generic div example</div>
+		<img src="image.jpg"/>
+		<img src="check.png"/>
+		<img src="pictureofme.jpg"/>
+		<form>
+			Text Input: <input type="text" name="textinput" size="12" maxlength="10" value="default"/><br/>
+			Radio Input: <input type="radio" name = "radioinput" value="radioinput"/><br/>
+			Radio Input 2: <input type="radio" name = "radioinput" value="radioinput2"/><br/>
+			<br/>
+			Checkbox input1: <input type="checkbox" name="checkboxinput" value = "checkboxinput1"/><br/>
+			Checkbox input2: <input type="checkbox" name="checkboxinput" value = "checkboxinput2"/><br/>
+			Checkbox input3: <input type="checkbox" name="checkboxinput" value = "checkboxinput3"/><br/>
+			Checkbox input4: <input type="checkbox" name="checkboxinput" value = "checkboxinput4"/><br/>
+			<br/>
+			Dropdown List:
+			<select name="dropdown list">
+				<option value="option1">Option 1</option>
+				<option value="option2">Option 2</option>
+				<option value="option3">Option 3</option>
+				<option value="option4">Option 4</option>
+				<option value="option5">Option 5</option>
+			</select>
+			<br/>
+			Text area:
+			<br/>
+			<textarea name="text area" rows="8" cols="40">Default text</textarea>
+			<br/>
+		</form>
+		<form action="dosomething" method="post">
+			Username: <input type="text" name="username"/>
+			Password: <input type="password" name="password"/>
+			<input type="submit" value="Submit Input Button"/><br/>
+			File input:
+			<input type="file" name="fileinput"/><br/>
+			
+		</form>
+	</body>
+</html>
