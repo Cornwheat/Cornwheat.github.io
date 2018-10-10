@@ -29,9 +29,12 @@ function init(resultFromServer){
 			document.body.style.backgroundImage='url("cloudy.jpg")';
 			break;
 			
+		case 'Mist':
+			document.body.style.backgroundImage='url("mist.jpg")';
+			break;
+			
 		case 'Rain':
 		case 'Drizzle':
-		case 'Mist':
 			document.body.style.backgroundImage='url("rain.jpg")';
 			break;
 		
