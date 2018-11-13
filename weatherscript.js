@@ -46,6 +46,10 @@ function init(resultFromServer){
 			document.body.style.backgroundImage='url("snow.jpg")';
 			break;
 			
+		case 'Haze'
+			document.body.style.backgroundImage='url("haze.jpg")';
+			break;
+			
 		default:
 			break;
 	}
