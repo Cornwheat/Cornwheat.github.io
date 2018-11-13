@@ -46,10 +46,13 @@ function init(resultFromServer){
 			document.body.style.backgroundImage='url("snow.jpg")';
 			break;
 			
+<<<<<<< HEAD
 		case 'Haze':
 			document.body.style.backgroundImage='url("haze.jpg")';
 			break;
 			
+=======
+>>>>>>> parent of 320dc15... Haze added
 		default:
 			break;
 	}
